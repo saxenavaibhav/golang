@@ -15,11 +15,12 @@ func main() {
 	i = 7
 	fmt.Println("i is set to", i)
 
-	whatWasSaid := saySomething()
+	whatWasSaid, theOtherThingThatWasSaid := saySomething()
 
 	fmt.Println(whatWasSaid)
+	fmt.Println(theOtherThingThatWasSaid)
 }
 
-func saySomething() string {
-	return "something"
+func saySomething() (string, string) {
+	return "something" "else"
 }
